@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Us</title>
+		<link href="index.css" rel="stylesheet" type="text/css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+		
+
+	</head>
+		<style type="text/css">
+			body{
+	margin: 0;
+	padding: 0;
+	background: skyblue;
+
+}
+nav{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	background:#a2dbc4;
+	position: sticky;
+	color: #222;
+	top: 0;
+}
+nav h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 35px;
+	width: 400px;
+	line-height: 50px;
+	margin: 20px 250px 0 5px;
+	text-transform: capitalize;
+	/*text-transform: uppercase;*/
+}
+nav ul li{
+	display: inline;
+	/*margin: 40px 40px 40px 0;*/
+	line-height:3;
+	font-size: 20px;
+
+}
+nav ul li a{
+	font-weight: bold;
+	color: #222;
+	padding: 20px 25px;
+	font-family: 'Rajdhani', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+
+
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+	}
+	nav ul li a::before{
+		content: '';
+		width: 100%;
+		height: 100%;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		z-index: -1;
+		background-color: transparent;
+		transform: translateY(100%);
+
+		transition: all 0.5s;
+	}
+
+	nav ul li a:hover::before{
+		background-color: teal;
+		transform: translateY(0);
+		
+	}
+	nav ul li a:hover{
+		color: #fff;
+	}
+	.about{
+		width: 100%;
+		height: 557px;
+		background: url('bg1.jpeg');
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		
+	}
+	.about .img{
+		width: 35%;
+		height: 300px;
+		background: url(about.png);
+
+		margin: 30px;
+	}
+	.about .page{
+		width: 60%;
+		margin: 30px 70px 0 100px;
+	}
+	</style>
+	<body>
+		<nav>
+			<img src="eros.png" width="95px" height="95px" alt="logo" style="margin:10px 15px 10px 30px;" />
+			<h1 style="font-family: 'Pacifico', cursive;">Eros dating agency</h1>
+			<ul>
+				<li><a href="index.html"><span></span>Home</a></li>
+				<li><a href="#"><span></span>Dating Places</a></li>
+				<li><a href="contact.html"><span></span>Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<div class="about">
+			<div class="img"></div>
+			<div class="page">
+				<h2 style="font-size: 40px;text-transform: uppercase;letter-spacing: 3px;color:teal;text-shadow: 3px -4px 2px #222;">About us</h2>
+				<p style="font-size:30px;font-weight: bold;color: #fff;">Welcome to Our Eros Dating Agency...We are Web Development Foundation Batch5 By Sayar Tin Htut Aung...We Develop Dating Website for all Singles in Myanmar...</p>
+				<button style="width:200px;height: 50px;background-color: teal;border:none;font-size: 23px;color: #fff;box-shadow: 5px 4px 2px #222;">Contact Us</button>
+			</div>
+
+
+		</div>
+		
+	</body>
+</html>

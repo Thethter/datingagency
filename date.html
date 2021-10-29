@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dating Places</title>
+	<link href="index.css" rel="stylesheet" type="text/css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<style type="text/css">
+		body{
+	margin: 0;
+	padding: 0;
+	background: skyblue;
+
+}
+nav{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	background:#a2dbc4;
+	position: sticky;
+	color: #222;
+	top: 0;
+}
+nav h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 35px;
+	width: 400px;
+	line-height: 50px;
+	margin: 20px 250px 0 5px;
+	text-transform: capitalize;
+	/*text-transform: uppercase;*/
+}
+nav ul li{
+	display: inline;
+	/*margin: 40px 40px 40px 0;*/
+	line-height:3;
+	font-size: 20px;
+
+}
+nav ul li a{
+	font-weight: bold;
+	color: #222;
+	padding: 20px 25px;
+	font-family: 'Rajdhani', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+
+
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+	}
+	nav ul li a::before{
+		content: '';
+		width: 100%;
+		height: 100%;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		z-index: -1;
+		background-color: transparent;
+		transform: translateY(100%);
+
+		transition: all 0.5s;
+	}
+
+	nav ul li a:hover::before{
+		background-color: teal;
+		transform: translateY(0);
+		
+	}
+	nav ul li a:hover{
+		color: #fff;
+	}
+
+
+.container{
+	width: 100%;
+	height: 400px;
+	background: url(bg1.jpeg);
+	z-index: -1;
+	/*opacity: 0.5;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.photo{
+	width: 70%;
+	height: 400px;
+	/*margin: 0 10px 30px 20px;*/
+
+}
+.photo img{
+	transform: scale(0.6);
+	transition: all 0.8s;
+}
+.container:hover{
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.container:hover img{
+	transform: scale(1);
+
+}
+
+.date{
+	float: left;
+	width: 300px;
+	height: 430px;
+	padding: 25px;
+	margin:30px 15px 30px 18px;
+	background-color: rgba(0, 0, 0, 0.3);
+	box-shadow: -3px 4px 2px gray;
+}
+.date h3{
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+}
+.date p{
+	font-family: 'Anton', sans-serif;
+}
+
+
+
+
+.footer{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	margin-top: 30px;
+	font-family: 'Oswald', sans-serif;
+	background-color: #222;
+	/*clear: both;*/
+	display: flex;
+	color: gray;
+}
+.footer .contact{
+	margin: 20px;
+	width: 40%;
+	
+}
+.contact .form-group{
+	margin: 20px;
+}
+.footer .contact i{
+	transition: all 0.3s;
+}
+.contact .subscribe{
+	width: 200px;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 20px;
+	padding: 10px;
+	color: gray;
+}
+.footer .contact i:hover{
+	color: teal;
+	transform: scale(1.2);
+}
+.footer .pay{
+	margin: 20px;
+	width: 60%;
+
+}
+.footer .pay a{
+	/*text-decoration: underline;*/
+	font-weight: bolder;
+	color: darkcyan;
+	margin: 30px;
+}
+
+	
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+	<nav>
+			<img src="eros.png" width="95px" height="95px" alt="logo" style="margin:10px 15px 10px 30px;" />
+			<h1 style="font-family: 'Pacifico', cursive;">Eros dating agency</h1>
+			<ul>
+				<li><a href="index.html"><span></span>Home</a></li>
+				<li><a href="date.html"><span></span>Dating Places</a></li>
+				<li><a href="contact.html"><span></span>Contact Us</a></li>
+			</ul>
+		</nav>
+		
+
+		<div class="container">
+		<div class="photo">
+			<img src="be.jpeg" width="100px" height="100px" style="border-radius:10px" />
+			<img src="ag.jpeg" width="150px" height="150px" style="border-radius:10px"/>
+			<img src="doja.jpeg" width="100px" height="100px" style="border-radius:10px"/>
+			<img src="korean1.jpeg" width="150px" height="150px" style="border-radius:10px"/>
+			<img src="korean2.jpeg" width="100px" height="100px" style="border-radius:10px"/>
+			<img src="korean3.jpeg" width="150px" height="150px" style="border-radius:10px"/>
+			<img src="korean4.jpeg" width="100px" height="100px" style="border-radius:10px"/>
+			<img src="korean5.jpeg" width="150px" height="150px" style="border-radius:10px"/>
+			<img src="korean6.jpeg" width="100px" height="100px" style="border-radius:10px"/>
+			<img src="korean8.jpeg" width="150px" height="150px" style="border-radius:10px"/>
+			<img src="korean9.jpeg" width="100px" height="100px" style="border-radius:10px"/>
+			<!-- <img src="mmk.webp" width="150px" height="180px" style="border-radius:10px"/> -->
+			<img src="paingtakon.jpeg" width="150px" height="150px" style="border-radius:10px"/>
+			<img src="p.jpeg" width="100px" height="100px" style="border-radius:10px"/>
+			<img src="jb.jpeg" width="150px" height="150px" style="border-radius:10px"/>
+		</div>
+
+		<h1 style="text-align: center;color: teal;font-family: sans-serif;">Dating Places</h1>
+
+	</div>
+
+	<h2 style="margin: 30px;">Join and Visit Local sites with Your Partners ...</h2>
+	<h1 style="font-family: 'Pacifico', cursive;margin: 30px;">Eros Dating Agency</h1>
+
+	<div class="date"><img src="yangon.jpeg" width="250px" height="250px">
+						<h3>Yangon</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+	<div class="date"><img src="yakhine.jpeg" width="250px" height="250px">
+						<h3>Yakhine</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+	<div class="date"><img src="inlay.jpeg" width="250px" height="250px">
+						<h3>Inlay</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+
+	<div class="date"><img src="tour11.jpeg" width="250px" height="250px">
+						<h3>Ywa n Lake</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+
+
+	<div class="date"><img src="tour1.jpeg" width="250px" height="250px">
+						<h3>Mount Poppa</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+	<div class="date"><img src="tour2.jpeg" width="250px" height="250px">
+						<h3>Mount Zwekapin</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+	<div class="date"><img src="tour3.jpeg" width="250px" height="250px">
+						<h3>Mandalay Moat</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+	<div class="date"><img src="tour4.jpeg" width="250px" height="250px">
+						<h3>Pindaya Cave</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+	<div class="date"><img src="tour5.jpeg" width="250px" height="250px">
+						<h3>Mount Kakaborzi</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+	<div class="date"><img src="tour6.jpeg" width="250px" height="250px">
+						<h3>Shweinlay Pagoda</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+	<div class="date"><img src="tour7.jpeg" width="250px" height="250px">
+						<h3>Thanbotteday Pagoda</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+	<div class="date"><img src="tour8.jpeg" width="250px" height="250px">
+						<h3>Yote Sone Kyaung</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+	<div class="date"><img src="tour9.jpeg" width="250px" height="250px">
+						<h3>Kyat Cave</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+	<div class="date"><img src="tour10.jpeg" width="250px" height="250px">
+						<h3>Hiper Waterfall</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+
+	</div>
+
+	<div class="date"><img src="tour11.jpeg" width="250px" height="250px">
+						<h3>Deedote Lake</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+	</div>
+
+	<div class="date"><img src="mandalay.jpeg" width="250px" height="250px">
+						<h3>U Bain Bridge</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+	</div>
+
+	<div class="date"><img src="maungmakan1.jpeg" width="250px" height="250px">
+						<h3>Maung Makan Sea</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+	</div>
+
+	<div class="date"><img src="bagan1.jpeg" width="250px" height="250px">
+						<h3>Bagan</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+	</div>
+
+	<div class="date"><img src="shan1.jpeg" width="250px" height="250px">
+						<h3>Kalaw Viewpoint</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+	</div>
+	
+	<div class="date"><img src="chin1.jpeg" width="250px" height="250px">
+						<h3>Rih Lake</h3>
+						 <p>Say Hi to Your partner and Visit there</p>
+	</div>
+
+
+
+	<div style="margin:0 400px 50px 400px;display: flex;width: 500px;height: 100px;">
+		<img src="eros.png" width="130px" height="130px" alt="logo" />
+			<h1 style="font-family: 'Pacifico', cursive;font-size: 40px;">Eros Dating Agency</h1>
+	</div>
+
+
+
+		<div class="footer">
+		<div class="contact">
+			<h1>Eros Dating Agency</h1>
+			<h3>Stay Connected</h3>
+			<p>Join with us and get real soulmate for you...</p>
+
+			<div class="form-group">
+				<input type="email" name="email" id="email" class="subscribe" placeholder="Enter your Email" autocomplete="off" style="width:250px" />
+				<button style="width:100px;padding:14px;background-color: gray;border:none;font-family: 'Oswald', sans-serif;letter-spacing: 2px;font-weight: bold;">SUBSCRIBE</button>
+
+			</div>
+
+			<span style="font-size: 20px;">We collerborate all singles from Myanmar and make strong relationship </span><br/><br/>
+
+			
+
+			<i class="fab fa-facebook-f" style="font-size: 25px;padding: 10px;"></i>
+			<i class="fab fa-twitter"  style="font-size: 25px;padding: 10px;"></i>
+			<i class="fab fa-youtube"  style="font-size: 25px;padding: 10px;"></i>
+			<i class="fab fa-instagram" style="font-size: 25px;padding: 10px;"></i>
+
+
+			
+		</div>
+		<div class="pay">
+			<h1 style="margin: 30px;">Navigate</h1>
+			<a href="#">Portfolio</a>
+			<a href="#">Share link</a>
+			<a href="#">Normal Dating</a>
+			<a href="#">Romantic Dating</a><br/>
+			<a href="#">Boylove Dating</a>
+			<a href="#">Bisexual Dating</a>
+			<a href="#">Lesbian Dating</a>
+			<a href="#">Friends With Benefit</a><br/>
+			<a href="#">Clear Relationship</a>
+			<a href="#">Dating With A friend</a>
+			<a href="#">Group Dating</a>
+			<a href="#">Duty</a>
+			<a href="#">Services</a>
+			<a href="#">Consulting</a>
+			<a href="#">Events</a><br/>
+			<a href="#">Party</a>
+			<a href="#">Members' Cute Videos</a>
+			<a href="#">Our team</a>
+			<a href="#">Location</a>
+			<a href="#">About Us</a><br/>
+			<a href="#">FAQs</a>
+			<a href="#">Details</a>
+			<a href="#">Support</a>
+			<a href="#">Admin's Info</a><br/>
+
+			<b style="font-size: 20px;margin-left: 30px;">Payment System By</b>
+
+			<i class="fab fa-cc-paypal" style="font-size: 40px;padding: 10px;"></i>
+			<i class="fab fa-cc-visa" style="font-size: 40px;padding: 10px;"></i>
+			<i class="fab fa-google-wallet" style="font-size: 40px;padding: 10px;"></i>
+
+			
+			<hr/>
+
+			<small style="font-size: 20px;margin:30px">Copyright &#x000A9;<span id = "span"></span> By Thin Htet Kyaw (Web Development Batch 5)</small>
+
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		let date = new Date();
+
+		document.getElementById('span').textContent = date.getFullYear();
+	</script>
+</body>
+</html>

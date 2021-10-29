@@ -1,0 +1,362 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: skyblue;
+
+}
+nav{
+	width: 100%;
+	height: 100px;
+	display: flex;
+	background:#a2dbc4;
+	position: sticky;
+	color: #222;
+	top: 0;
+}
+nav h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 35px;
+	width: 400px;
+	line-height: 50px;
+	margin: 20px 250px 0 5px;
+	text-transform: capitalize;
+	/*text-transform: uppercase;*/
+}
+nav ul li{
+	display: inline;
+	/*margin: 40px 40px 40px 0;*/
+	line-height:3;
+	font-size: 20px;
+
+}
+nav ul li a{
+	font-weight: bold;
+	color: #222;
+	padding: 20px 25px;
+	font-family: 'Rajdhani', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+
+
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+	}
+	nav ul li a::before{
+		content: '';
+		width: 100%;
+		height: 100%;
+
+		position: absolute;
+		top: 0;
+		left: 0;
+
+		z-index: -1;
+		background-color: transparent;
+		transform: translateY(100%);
+
+		transition: all 0.5s;
+	}
+
+	nav ul li a:hover::before{
+		background-color: teal;
+		transform: translateY(0);
+		
+	}
+	nav ul li a:hover{
+		color: #fff;
+	}
+
+
+.container{
+	width: 100%;
+	height: 600px;
+	background: url(bg1.jpeg);
+	z-index: -1;
+	/*opacity: 0.5;*/
+	display: flex;
+}
+.photo{
+	width: 70%;
+	height: 300px;
+	margin: 50px 10px 30px 20px;
+
+}
+.photo img{
+	transform: scale(0.6);
+	transition: all 0.8s;
+}
+.container:hover img{
+	transform: scale(1);
+}
+.login{
+	width: 30%;
+	height: 600px;
+	margin: 0 20px 20px 0;
+	padding: 10px;
+	box-shadow: 3px 4px 3px #222;
+	border-radius: 10px;
+	background: rgba(0, 0, 0,0.5);
+	color: #fff;
+
+}
+
+.login h2{
+	font-family: 'Anton', sans-serif;
+	font-size: 30px;
+	letter-spacing: 3px;
+	margin-left: 30px;
+	/*padding-top: 20px;*/
+
+}
+.login h4{
+	font-family: 'Anton', sans-serif;
+	font-size: 18px;
+	margin-left: 30px;
+}
+*{
+	box-sizing: border-box;
+}
+.login label{
+	font-size: 20px;
+	margin-left: 30px;
+	margin-right: 30px;
+	font-family: 'Anton', sans-serif;
+}
+.login i:hover{
+	background-color: teal;
+}
+.login .form-group{
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+.form-group .form-control{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 20px;
+	padding: 10px;
+	color: #fff;
+	font-family: 'Anton', sans-serif;
+}
+.form-group .form-control:focus{
+	outline: teal;
+	/*outline-color: darkred;*/
+}
+.form-group .form-control::placeholder{
+	color: #fff;
+}
+.login input[type="radio"]{
+	-webkit-appearance: none;
+}
+.login .btn{
+	width:100%;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 30px;
+	background-color: rgba(0, 0, 0, 0.3);
+	box-shadow: 5px 5px 3px #222;
+	color:#fff;
+	font-size: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+
+	position: relative;
+	overflow: hidden;
+}
+.login .btn a{
+	text-decoration: none;
+	color: #fff;
+}
+.login .btn::before{
+ content: 'Requested';
+ width: 100%;
+ height: 100%;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ background-color: teal;
+
+ position: absolute;
+ top: 0;
+ left: 0;
+
+ transform: translateY(100%);
+
+ transition: all 0.5s;
+}
+.login .btn:hover::before{
+	transform: translateY(0);
+}
+.text{
+	margin: 20px 0 50px 30px;
+}
+.text h2{
+	font-family: 'Pacifico', cursive;
+	font-size: 30px;
+}
+.text h4{
+	font-size: 25px;
+
+}
+.mem{
+	float: left;
+	width: 250px;
+	height: 430px;
+	margin:30px 0 30px 15px;
+	background-color: rgba(0, 0, 0, 0.3);
+	box-shadow: -3px 4px 2px gray;
+
+	position: relative;
+	overflow: hidden;
+}
+.mem h3,.mem p{
+	font-family: 'Anton', sans-serif;
+	text-transform: uppercase;
+	margin: 20px;
+	margin-bottom: 30px;
+}
+.mem a{
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 15px 20px;
+	margin: 30px 0 10px 15px;
+	background-color:teal;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+	color: #fff;
+
+
+}
+.mem .caption{
+	width: 100%;
+	height: 80%;
+	color: #fff ;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	opacity: 0;
+	transform: translateX(100%);
+	transition: all 0.7s;
+}
+.caption p{
+	font-family: sans-serif;
+	font-size: 18px;
+	text-transform: capitalize;
+	font-weight: bold;
+	margin: 10px;
+}
+ .mem:hover .caption{
+	transform: translateX(0);
+	opacity: 1;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.seeallbtn{
+	width:180px;
+	height: 50px;
+	background-color: teal;
+	margin: 30px;
+	border:#fff;
+	font-size: 20px;
+	color: #fff;
+	text-transform: capitalize;
+	box-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+
+
+	position: relative;
+	
+}
+.seeallbtn::before{
+				content: '';
+
+				width: 20px;
+				height: 20px;
+				/*background-color: green;*/
+
+				position: absolute;
+				top: -5px;
+				left: -5px;
+
+				border-top: 3px solid teal;
+				border-left: 3px solid teal;
+
+				transition: all 0.25s;
+			}
+.seeallbtn::after{
+				content: '';
+
+				width: 20px;
+				height: 20px;
+				/*background-color: green;*/
+
+				position: absolute;
+				bottom: -5px;
+				right: -5px;
+
+				border-bottom: 3px solid teal;
+				border-right: 3px solid teal;
+
+				transition: all 0.25s;
+
+			}
+.seeallbtn:hover::before,
+.seeallbtn:hover::after{
+	width: 100%;
+	height: 100%;
+}
+
+.footer{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	margin-top: 30px;
+	font-family: 'Oswald', sans-serif;
+	background-color: #222;
+	/*clear: both;*/
+	display: flex;
+	color: gray;
+}
+.footer .contact{
+	margin: 20px;
+	width: 40%;
+	
+}
+.contact .form-group{
+	margin: 20px;
+}
+.footer .contact i{
+	transition: all 0.3s;
+}
+.contact .subscribe{
+	width: 200px;
+	margin: 0;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 20px;
+	padding: 10px;
+	color: gray;
+}
+.footer .contact i:hover{
+	color: teal;
+	transform: scale(1.2);
+}
+.footer .pay{
+	margin: 20px;
+	width: 60%;
+
+}
+.footer .pay a{
+	/*text-decoration: underline;*/
+	font-weight: bolder;
+	color: darkcyan;
+	margin: 30px;
+}
